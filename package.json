@@ -2,7 +2,10 @@
   "name": "januscli",
   "version": "0.0.4",
   "description": "Development toolbelt",
-  "main": "es5/janus.js",
+  "main": "lib/janus.js",
+  "bin": {
+    "janus": "bin/index.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "babel --watch --presets es2015 lib -d es5",
