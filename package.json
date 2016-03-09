@@ -2,7 +2,7 @@
   "name": "januscli",
   "version": "0.0.2",
   "description": "Development toolbelt",
-  "main": "lib/janus.js",
+  "main": "es5/janus.js",
   "bin": {
     "janus": "bin/index.js"
   },
