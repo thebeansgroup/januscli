@@ -1,6 +1,6 @@
 {
   "name": "januscli",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Development toolbelt",
   "main": "es5/janus.js",
   "bin": {
