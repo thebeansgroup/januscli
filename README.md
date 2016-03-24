@@ -186,3 +186,36 @@ janus.loadPlugin(Example);
 
 janus.start();
 ```
+
+Example output:
+
+```zsh
+[master][~/src/janustest] ./bin/index.js -h
+
+  Usage: index [options] [command]
+
+
+  Commands:
+
+    example    Run example command
+    example2   Run example 2 command
+
+  Options:
+
+    -h, --help         output usage information
+    -V, --version      output the version number
+    -v, --verbose      Verbose mode for debugging
+    -f, --foo <value>  Set Foo
+    
+ [master][~/src/janustest] ./bin/index.js example
+✓ Success: Example: Example command started
+ℹ Info: Example: Foo = bar
+
+[master][~/src/janustest] ./bin/index.js example2
+✓ Success: Example: Example 2 command started
+ℹ Info: Example: Foo = bar
+
+[master][~/src/janustest] ./bin/index.js example2 --foo buzz
+✓ Success: Example: Example 2 command started
+ℹ Info: Example: Foo = buzz
+```
